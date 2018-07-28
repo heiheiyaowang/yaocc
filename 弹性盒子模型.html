@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul,li,body{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        #ul1{
+            display:-webkit-box;
+        }
+        #ul1 li{
+            -webkit-box-flex:1;
+            height:40px;
+            border:1px solid #000;
+        }
+        #ul1 li:nth-child(1){
+            background:salmon;
+        }
+        #ul1 li:nth-child(2){
+            background: #929aff;
+        }
+        #ul1 li:nth-child(3){
+            background: #ffbe9b;
+        }
+    </style>
+</head>
+<body>
+    <ul id="ul1">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

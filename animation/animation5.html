@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes change {
+            0%{
+               box-shadow:0 0 10px rgba(255,255,255,1);
+            }
+            25%{
+               box-shadow:0 0 30px rgba(255,255,255,1);
+            }
+            50%{
+               box-shadow:0 0 50px rgba(255,255,255,1);
+            }
+            75%{
+               box-shadow:0 0 30px rgba(255,255,255,1);
+            }
+            100%{
+                box-shadow:0 0 10px rgba(255,255,255,1);
+            }
+        }
+        body{
+            background:rgba(0,0,0,1);
+        }
+        #box{
+            width:100px;
+            height:100px;
+            background:rgba(255,255,255,1);
+            border-radius:50%;
+            position: absolute;
+            right: 100px;
+            top: 100px;
+            animation:1s change linear infinite;
+            /*box-shadow:0 0 30px rgba(255,255,255,1);*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

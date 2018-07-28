@@ -1,0 +1,257 @@
+box-sizing:
+
+        border-box
+
+        content-box;
+
+calc  css计算
+
+       + -  需要添加空格
+
+       * ／ 不要添加空格
+
+       所有的都要去加空格
+
+弹性盒子
+
+    display:-webkit-box;
+
+    -webkit-box-flex:1
+
+    系数／总数
+
+    不能使用float
+    不能使用定位
+
+    如果真要去用定位的话？需要添加一个父级
+
+
+手机端页面默认是按照pc端页面分辨率
+
+    安卓
+        320-640
+
+    苹果
+        4
+
+        4s
+
+        5
+
+        5c
+
+        5s  320
+
+        6   375
+
+        6p  414
+
+        搞移动端
+
+            只需要适配手机尺寸
+
+                320
+
+            <meta name="viewport" content="width=device-width">
+
+            <meta name="viewport" content="width=device-width user-scalable=0">
+
+            <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+            设置窗口的大小
+
+                name="viewport"
+
+            将页面的分辨率以设备宽度大小去展示
+
+                content="width=device-width"
+
+            禁止用户缩放页面
+
+                user-scalable=0
+
+            默认的缩放比例
+
+                initial-scale=1.0
+
+            最大缩放比例
+
+                maximum-scale=1.0
+
+            最小缩放比例
+
+                mininum-scale=1.0
+        苹果专有：
+
+        	允许以app方式进行浏览器网页 -> 添加到主屏幕
+        	<meta name="apple-mobile-web-app-capable" content="yes">
+
+        	bar的样式
+                <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+           禁止识别电话号码、邮箱:
+           	<meta name="format-detection" content="telephone=no,email=no">
+
+           	点击允许全屏展示：
+           	<meta content="yes" name="apple-touch-fullscreen"/>
+           	保留系统配置：
+           	<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes"/>
+           ----------------------------------------------
+           <!-- 启用360浏览器的极速模式(webkit) -->
+           <meta name="renderer" content="webkit">   √
+           <!-- 尽量用IE最新模式渲染 -->
+           <meta http-equiv="X-UA-Compatible" content="IE=edge"> √
+
+           <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+           <meta name="HandheldFriendly" content="true">
+           <!-- 微软的老式浏览器 -->
+           <meta name="MobileOptimized" content="320">
+
+           <!-- uc强制竖屏 -->
+           <meta name="screen-orientation" content="portrait">
+
+           <!-- QQ强制竖屏 -->
+           <meta name="x5-orientation" content="portrait">
+
+           <!-- UC强制全屏 -->
+           <meta name="full-screen" content="yes">
+           <!-- QQ强制全屏 -->
+           <meta name="x5-fullscreen" content="true">
+
+           <!-- UC应用模式 -->
+           <meta name="browsermode" content="application">
+           <!-- QQ应用模式 -->
+           <meta name="x5-page-mode" content="app">
+
+    测试
+
+        浏览器的模拟测试  可信度只有 50%;
+
+        真机测试
+
+            第一种 买一个线上的服务器和域名
+
+            第二种 window  win+r=>输入框=>cmd => 终端 => ipconfig
+
+                 同一个局域网下
+
+                 查看ip
+
+                    198.168.1.30
+
+                 安装服务器  启动服务器
+
+                    浏览器里面输入 ip地址 打开服务器默认的页面
+
+                    将你在电脑上访问页面地址
+
+--------------------------------------------------------------------
+    流体布局
+
+        float + 100%;
+
+        设计师特别没面子
+
+        width 100%   高度自适应
+
+        图片设计，尽量大(怕失真)
+
+        与设计图不相符
+
+--------------------------------------------------------------------
+
+    定宽布局
+
+        max-width  min-width
+
+        宽度值超出以后两边会留白
+
+            高度
+                a）子级撑起来
+                b）定死
+
+--------------------------------------------------------------------
+
+    相对单位布局
+
+        em  根据父级字体大小
+
+        %   根据父级的宽高来定位
+
+        vw  根据可视区width来进行大小设置
+
+            1vw == 可视区宽度 1%
+
+        vh  根据可视区height来进行大小设置
+
+            1vh == 可视区高度 1%
+
+        vmin 根据可视区width，height最小的来进行大小设置
+
+        vmax 根据可视区width，height最大的来进行大小设置
+
+        rem  根据跟字体大小进行设置
+
+            默认的跟字体大小 16px
+
+                1rem == 20px
+                         oW=document.documentElement.clientWidth
+
+                       屏幕尺寸      根字体大小
+
+                        320px设计图   10px  .5rem;
+
+                        640px设计图   10px／2／20
+
+                        750px设计图   10px/2.34375／20
+
+                        1280px设计图  10px／4／20
+
+
+
+                16rem   320        20px
+
+                        oW
+
+                        750
+                        414        25.875
+
+                16rem   375        23.4375
+
+                        document.documentElement.clientWidth*20/320
+
+
+
+
+
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes move {
+            0%{
+                transform:rotate(-20deg);
+            }
+            25%{
+                transform:rotate(20deg);
+            }
+            50%{
+                transform:rotate(-20deg);
+            }
+            75%{
+                transform:rotate(20deg);
+            }
+            100%{
+                transform:rotate(-20deg);
+            }
+        }
+        #div1{
+            width:200px;
+            height:200px;
+            background:salmon;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            animation:1s move linear infinite;
+            /*animation-duration:1s;*/
+            /*animation-timing-function: linear;*/
+            /*animation-name:move;*/
+            /*animation-iteration-count: infinite;*/
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

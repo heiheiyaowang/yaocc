@@ -1,0 +1,45 @@
+    @keyframes move {
+        from{
+            transform:translate3d(0,0,0);
+        }
+        to{
+            transform:translate3d(300px,0,0);
+        }
+    }
+
+    animation:1s move  ease-in;
+
+
+    @keyframes move {
+        0%{
+            transform:rotate(-20deg);
+        }
+        25%{
+            transform:rotate(20deg);
+        }
+        50%{
+            transform:rotate(-20deg);
+        }
+        75%{
+            transform:rotate(20deg);
+        }
+        100%{
+            transform:rotate(-20deg);
+        }
+    }
+
+    animation:1s move  ease-in;
+
+
+    animation
+
+        animation-duration:1s;  运动时间
+        animation-timing-function: linear; 运动形式
+        animation-name:move; 需要运动的函数
+
+
+    https://blog.csdn.net/aSuncat/article/details/52588078
+
+    https://daneden.github.io/animate.css/  css 动画
+
+    http://wqs.jd.com/promote/2015/mum/index.html?ptag=17005.2.9&from=timeline&isappinstalled=0
